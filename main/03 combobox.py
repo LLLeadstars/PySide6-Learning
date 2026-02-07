@@ -9,9 +9,9 @@ class MyWindow(QWidget):
 
         cb.currentIndexChanged.connect(lambda: print(cb.currentText()))
 
-        mainlayout = QVBoxLayout()
-        mainlayout.addWidget(cb)
-        self.setLayout(mainlayout)
+        self.mainlayout = QVBoxLayout()
+        self.mainlayout.addWidget(cb)
+        self.setLayout(self.mainlayout)
 
 
 if __name__ == '__main__':

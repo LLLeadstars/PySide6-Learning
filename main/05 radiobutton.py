@@ -1,19 +1,13 @@
-from PySide6.QtWidgets import QApplication, QWidget, QCheckBox, QVBoxLayout
+from PySide6.QtWidgets import QApplication, QWidget, QRadioButton, QButtonGroup, QGroupBox, QVBoxLayout
 
 class MyWindow(QWidget):
     def __init__(self):
         super().__init__()
 
-        cb = QCheckBox('是否被选择')
-        cb.stateChanged.connect(self.showState)
-        
         self.mainlayout = QVBoxLayout()
-        self.mainlayout.addWidget(cb)
+        self.mainlayout.addWidget()
         self.setLayout(self.mainlayout)
-
-    def showState(self, state):
-        print(state)
-
+        
 
 if __name__ == '__main__':
     app = QApplication([])
