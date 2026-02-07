@@ -1,6 +1,6 @@
 from PySide6.QtWidgets import QApplication, QWidget
 #from Ui_LoginFrame import Ui_Form
-from Ui_Calculater import Ui_Form
+from Ui_example import Ui_Form
 
 '''
 class MyWindow(QWidget):
