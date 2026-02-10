@@ -15,7 +15,6 @@ class MyWindow(QWidget):
         slider.setMinimum(0)
         slider.setMaximum(100)
         '''
-
         self.mainlayout = QVBoxLayout()
         self.mainlayout.addWidget(lb)
         self.mainlayout.addWidget(slider)
